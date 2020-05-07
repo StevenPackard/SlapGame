@@ -6,11 +6,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SlapGame</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="game.css">
 </head>
 
 <body>
+  <header class="container-fluid">
+    <div class="row d-flex text-center text-light justify-content-start align-items-center">
+      <div class="col-2">
+        <button onclick="reset()" class="btn btn-transparent"><img class="surrender"
+            src="https://preview.redd.it/1gjk82c5e3t11.png?width=265&format=png&auto=webp&s=ee95e28b732b3e243b362c2005841a587195c65e"
+            alt=""></button>
+      </div>
+      <div class="col-8">
+        <h1>Health:<span id="health"></span></h1>
+        <h1>Target:<span id="enemy"></span></h1>
+        <h1>Hits:<span id="hits"></span></h1>
+      </div>
+    </div>
+  </header>
 
+  <main class="container-fluid">
+    <div class="row d-flex text-center">
+      <div class="col-12">
+      </div>
+    </div>
+
+    <div class="row d-flex flex-column text-light">
+      <div class="col-4" id="items">
+        <h4>Gank From Rengar</h4>
+        <button class="btn btn-transparent" onclick="getRengar()"><img class="picture-small"
+            src="https://scontent.fboi1-1.fna.fbcdn.net/v/t1.0-9/54236956_1310782409062336_2129388684493979648_n.png?_nc_cat=110&_nc_sid=8024bb&_nc_oc=AQkgQrZxU50iWNEn5hieVC2xK5w1g_BHdSvq11wWmz6grKrtUr1WBIKRW3PxupnHArc&_nc_ht=scontent.fboi1-1.fna&oh=0c787a8ae469ed334c76afa14022f49d&oe=5EDB7964"
+            alt=""></button>
+      </div>
+      <div class="col-4">
+        <h4>Slay Baron</h4>
+        <button class="btn btn-transparent" onclick="getBaron()"><img class="picture-small"
+            src="https://vignette.wikia.nocookie.net/leagueoflegends/images/1/1e/Baron_Nashor_profileicon.png/revision/latest?cb=20170504213235"
+            alt=""></button>
+      </div>
+      <div class="col-4">
+        <h4>Buy Infinity Edge</h4>
+        <button class="btn btn-transparent" onclick="getIe()"><img class="picture-small"
+            src="https://vectorified.com/images/infinity-edge-icon-3.jpg" alt=""></button>
+
+      </div>
+
+
+      <div class="col-12 text-light">
+        <h1>Buff Total:<span id="buffs"></span></h1>
+      </div>
+    </div>
+  </main>
+
+
+
+  <footer class="container-fluid">
+    <div class="row d-flex justify-content-start text-center text-light">
+      <div class="col-2">
+        <button class="btn btn-transparent" onclick="slap()"><img class="picture-medium"
+            src="https://2.bp.blogspot.com/-f8tDF2Pd6Ic/WP_Jw_qb8-I/AAAAAAAAjuA/kmzEU6OZhwQNwIpLlIcfoXjQI3qDgWmogCLcB/s200/1.jpg"
+            alt=""></button>
+        <h4>Comet</h4>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-transparent" onclick="punch()"><img class="picture-medium"
+            src="https://3.bp.blogspot.com/-v7GeY9BzkHI/WNl0yqN6j3I/AAAAAAAAg3A/n17yMJXQkoYaH-q_otWGfz-awgos22gEACLcB/s1600/dbc67cba44126327.jpg"
+            alt="">
+        </button>
+        <h4>Punch</h4>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-transparent" onclick="kick()"><img class="picture-medium"
+            src="https://1.bp.blogspot.com/-V0MiTSTFDis/VT_VuWAovvI/AAAAAAAAClA/vhdxL86PFiU/s1600/W.png"
+            alt=""></button>
+        <h4>Volley</h4>
+      </div>
+    </div>
+  </footer>
 
 
 
